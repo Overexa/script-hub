@@ -4,12 +4,34 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local mainframe = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local sideframe = Instance.new("Frame")
+local sideframe_2 = Instance.new("UICorner")
+local exa = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local tab1 = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local dex = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local infyield = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local User = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local esp = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
-local TextButton_3 = Instance.new("TextButton")
-local TextButton_4 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local autorob = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local autoarrest = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local autosteal = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local inkgame = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
 
 --Properties:
 
@@ -17,81 +39,229 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false 
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.319397986, 0, 0.304207116, 0)
-Frame.Size = UDim2.new(0, 352, 0, 217)
-Frame.Active = true 
-Frame.Draggable = true
+mainframe.Name = "mainframe"
+mainframe.Parent = ScreenGui
+mainframe.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+mainframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mainframe.BorderSizePixel = 0
+mainframe.Position = UDim2.new(0.232809424, 0, 0.132446215, 0)
+mainframe.Size = UDim2.new(0, 497, 0, 299)
+mainframe.Active = true
+mainframe.Draggable = true
+UICorner.Parent = mainframe
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+sideframe.Name = "sideframe"
+sideframe.Parent = mainframe
+sideframe.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+sideframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+sideframe.BorderSizePixel = 0
+sideframe.Size = UDim2.new(0, 139, 0, 299)
+sideframe.Active = true
+
+sideframe_2.Name = "sideframe"
+sideframe_2.Parent = sideframe
+
+exa.Name = "exa"
+exa.Parent = sideframe
+exa.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+exa.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exa.BorderSizePixel = 0
+exa.Position = UDim2.new(0.111110993, 0, 0.0234113708, 0)
+exa.Size = UDim2.new(0, 48, 0, 57)
+exa.Font = Enum.Font.Michroma
+exa.Text = "exa"
+exa.TextColor3 = Color3.fromRGB(0, 0, 0)
+exa.TextSize = 21.000
+
+UICorner_2.CornerRadius = UDim.new(0, 100000000)
+UICorner_2.Parent = exa
+
+UIAspectRatioConstraint.Parent = exa
+
+tab1.Name = "tab 1"
+tab1.Parent = sideframe
+tab1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tab1.BackgroundTransparency = 1.000
+tab1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tab1.BorderSizePixel = 0
+tab1.Position = UDim2.new(0.111111209, 0, 0.244147152, 0)
+tab1.Size = UDim2.new(0, 102, 0, 29)
+tab1.Font = Enum.Font.SourceSans
+tab1.Text = ""
+tab1.TextColor3 = Color3.fromRGB(0, 0, 0)
+tab1.TextSize = 19.000
+
+UICorner_3.Parent = tab1
+
+dex.Name = "dex"
+dex.Parent = tab1
+dex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dex.BorderColor3 = Color3.fromRGB(0, 0, 0)
+dex.BorderSizePixel = 0
+dex.Position = UDim2.new(0.0294117648, 0, 0.482758611, 0)
+dex.Size = UDim2.new(0, 102, 0, 29)
+dex.Font = Enum.Font.Unknown
+dex.Text = "Dex"
+dex.TextColor3 = Color3.fromRGB(0, 0, 0)
+dex.TextSize = 23.000
+
+UICorner_4.Parent = dex
+
+infyield.Name = "inf yield"
+infyield.Parent = tab1
+infyield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infyield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infyield.BorderSizePixel = 0
+infyield.Position = UDim2.new(0.0294117648, 0, 2.13793111, 0)
+infyield.Size = UDim2.new(0, 102, 0, 29)
+infyield.Font = Enum.Font.Unknown
+infyield.Text = "inf yield"
+infyield.TextColor3 = Color3.fromRGB(0, 0, 0)
+infyield.TextSize = 14.000
+
+UICorner_5.Parent = infyield
+
+User.Name = "User"
+User.Parent = tab1
+User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+User.BorderColor3 = Color3.fromRGB(0, 0, 0)
+User.BorderSizePixel = 0
+User.Position = UDim2.new(0.0294117648, 0, 3.75862074, 0)
+User.Size = UDim2.new(0, 101, 0, 29)
+User.Font = Enum.Font.Unknown
+User.Text = "Usercreated"
+User.TextColor3 = Color3.fromRGB(0, 0, 0)
+User.TextSize = 14.000
+
+UICorner_6.Parent = User
+
+esp.Name = "esp"
+esp.Parent = tab1
+esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+esp.BorderSizePixel = 0
+esp.Position = UDim2.new(0.0294117648, 0, 5.34482765, 0)
+esp.Size = UDim2.new(0, 102, 0, 29)
+esp.Font = Enum.Font.Unknown
+esp.Text = "esp"
+esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+esp.TextSize = 14.000
+
+UICorner_7.Parent = esp
+
+TextLabel.Parent = sideframe
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 352, 0, 37)
-TextLabel.Font = Enum.Font.LuckiestGuy
-TextLabel.Text = "EXA'S HUB"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 26.000
+TextLabel.Position = UDim2.new(0.0679457411, 0, 0.18394649, 0)
+TextLabel.Size = UDim2.new(0, 111, 0, 28)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Universals"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.0568181835, 0, 0.235023037, 0)
-TextButton.Size = UDim2.new(0, 127, 0, 50)
-TextButton.Font = Enum.Font.Unknown
-TextButton.Text = "Jb auto rob"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 14.000
+UICorner_8.Parent = TextLabel
 
-TextButton_2.Parent = Frame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.582386374, 0, 0.235023037, 0)
-TextButton_2.Size = UDim2.new(0, 127, 0, 50)
-TextButton_2.Font = Enum.Font.Unknown
-TextButton_2.Text = "Auto arrest"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextSize = 14.000
+TextLabel_2.Parent = mainframe
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0563380271, 0, 0.0234113708, 0)
+TextLabel_2.Size = UDim2.new(0, 133, 0, 50)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "hub"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 26.000
 
-TextButton_3.Parent = Frame
-TextButton_3.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.0568181835, 0, 0.57603687, 0)
-TextButton_3.Size = UDim2.new(0, 127, 0, 50)
-TextButton_3.Font = Enum.Font.Unknown
-TextButton_3.Text = "Sab hub"
-TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.TextSize = 14.000
+autorob.Name = "auto rob"
+autorob.Parent = mainframe
+autorob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autorob.BorderColor3 = Color3.fromRGB(0, 0, 0)
+autorob.BorderSizePixel = 0
+autorob.Position = UDim2.new(0.311871231, 0, 0.0702341124, 0)
+autorob.Size = UDim2.new(0, 316, 0, 50)
+autorob.Font = Enum.Font.Unknown
+autorob.Text = "Auto rob v6"
+autorob.TextColor3 = Color3.fromRGB(0, 0, 0)
+autorob.TextSize = 26.000
 
-TextButton_4.Parent = Frame
-TextButton_4.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.582386374, 0, 0.57603687, 0)
-TextButton_4.Size = UDim2.new(0, 127, 0, 50)
-TextButton_4.Font = Enum.Font.Unknown
-TextButton_4.Text = "Ink game"
-TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.TextSize = 14.000
+UICorner_9.Parent = autorob
 
-TextButton.MouseButton1Down:connect(function()
+autoarrest.Name = "auto arrest"
+autoarrest.Parent = mainframe
+autoarrest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autoarrest.BorderColor3 = Color3.fromRGB(0, 0, 0)
+autoarrest.BorderSizePixel = 0
+autoarrest.Position = UDim2.new(0.311871231, 0, 0.284280926, 0)
+autoarrest.Size = UDim2.new(0, 316, 0, 50)
+autoarrest.Font = Enum.Font.Unknown
+autoarrest.Text = "Auto arrest"
+autoarrest.TextColor3 = Color3.fromRGB(0, 0, 0)
+autoarrest.TextSize = 26.000
+
+UICorner_10.Parent = autoarrest
+
+autosteal.Name = "auto steal"
+autosteal.Parent = mainframe
+autosteal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+autosteal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+autosteal.BorderSizePixel = 0
+autosteal.Position = UDim2.new(0.311871231, 0, 0.494983286, 0)
+autosteal.Size = UDim2.new(0, 316, 0, 50)
+autosteal.Font = Enum.Font.Unknown
+autosteal.Text = "Auto steal"
+autosteal.TextColor3 = Color3.fromRGB(0, 0, 0)
+autosteal.TextSize = 26.000
+
+UICorner_11.Parent = autosteal
+
+inkgame.Name = "ink game"
+inkgame.Parent = mainframe
+inkgame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+inkgame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+inkgame.BorderSizePixel = 0
+inkgame.Position = UDim2.new(0.311871231, 0, 0.725752532, 0)
+inkgame.Size = UDim2.new(0, 316, 0, 50)
+inkgame.Font = Enum.Font.Unknown
+inkgame.Text = "Ink games"
+inkgame.TextColor3 = Color3.fromRGB(0, 0, 0)
+inkgame.TextSize = 26.000
+
+UICorner_12.Parent = inkgame
+
+dex.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ProphecySkondo/Misc/refs/heads/main/dex.lua"))()
+end)
+
+
+infyield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+User.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/randomizedcomponent/UC/refs/heads/main/3307468c285f4fe535fb5d87b4b053e6.lua"))()
+end)
+
+esp.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/KeeTcR6z"))()
+end)
+
+autorob.MouseButton1Down:connect(function()
+	script_key="GvMdrAILyISyQObJWyxGBuZhyboTkyoO";
 	loadstring(game:HttpGet('http://scripts.projectauto.xyz/AutoRobV6'))()
 end)
 
-TextButton_2.MouseButton1Down:connect(function()
+autoarrest.MouseButton1Down:connect(function()
+	script_key = 'GvMdrAILyISyQObJWyxGBuZhyboTkyoO'
 	loadstring(game:HttpGet('http://scripts.projectauto.xyz/AutoArrestV4'))()
 end)
 
-TextButton_3.MouseButton1Down:connect(function()
+autosteal.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/hehehe9028/IDKHUB-steal-a-brainrot/refs/heads/main/IDKHUB%20steal%20a%20brainrot"))()
 end)
 
-TextButton_4.MouseButton1Down:connect(function()
+inkgame.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/hehehe9028/IDKHUB-ink-game/refs/heads/main/IDKHUB%20ink%20game"))()
 end)
